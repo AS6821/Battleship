@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battleship</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script defer src="js/script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Battleship Game</h1>
+    </header>
+    <div id="statusMessage" class="statusMessage"></div>
+    <main>
+        <div class="player">
+            <h2>Player 1</h2>
+            <div id="player1" class="gameboard"></div>
+        </div>
+        <div class="player">
+            <h2>Player 2</h2>
+            <div id="player2" class="gameboard"></div>
+        </div>
+    </main>
+    <div class="button-container">
+        <button id="start-game">Start Game</button>
+        <button id="reset-game">Reset Game</button>
+    </div>
+    <div class="chat-container">
+        <div class="chat-box">
+            <div id="chat-box" class="chat-box-inner"></div>
+            <div class="chat-input-container">
+                <input type="text" id="chat-input-1" placeholder="Player 1: Type a message...">
+                <button data-player="1" class="send-message">Send</button>
+            </div>
+            <div class="chat-input-container">
+                <input type="text" id="chat-input-2" placeholder="Player 2: Type a message...">
+                <button data-player="2" class="send-message">Send</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
